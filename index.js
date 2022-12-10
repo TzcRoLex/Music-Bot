@@ -9,7 +9,7 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBit
 const config = require('./config.js');
 
 client.distube = new DisTube(client, {
-  leaveOnFinish: true,
+  leaveOnFinish: false,
   emitAddSongWhenCreatingQueue: false,
   emitNewSongOnly: true,
   plugins: [new SpotifyPlugin()]
